@@ -1,35 +1,82 @@
 body {
-  background: black;
+  background: purple;
 }
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
 .searchInputs {
-    margin-top: 105px;
-    display: flex;
-  }
-  
-  .search input {
-    background: white;
-    border: 0;
-    border-radius: 2px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    font-size: 18px;
-    padding: 15px;
-    height: 30px;
-    width: 300px;
-  }
-  
-  .searchIcon {
-    height: 60px;
-    width: 50px;
-    background-color: white;
-    display: grid;
-    place-items: center;
-  }
+  margin-top: 105px;
+  display: flex;
+}
 
-  .input:focus {
-    outline: none;
-  }
+.search input {
+  background: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+}
 
-  .searchIcon svg {
-    font-size: 35px;
-  }
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.searchIcon:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.mealContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.mealThumb {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.mealName {
+  font-size: 1.2rem;
+}
+
+.mealCategory {
+  font-size: 0.8rem;
+  color: rgb(79, 50, 50);
+  margin-left: auto;
+}
+
+.searchResultsContainer {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
