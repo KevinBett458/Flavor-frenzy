@@ -1,13 +1,30 @@
 import React from 'react'
-import Search from './components/Search'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home';
+import About from './components/Favourites';
+import "./App.css"
+import Navbar from './components/Navbar';
 
 
 function App() {
+
   return (
-    <div className='App'>
-      <Search placeholder='Enter a meal name....'/>
-    </div>
-  )
+    <>
+
+
+      <Navbar />
+
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+
+        <Route path='/favourites' Component={<>Favourites</>} />
+        <Route path='/about' Component={About} />
+      </Routes>
+
+    </>
+  );
 }
 
+
 export default App
+

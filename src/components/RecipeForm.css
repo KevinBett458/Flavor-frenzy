@@ -1,0 +1,46 @@
+.recipe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url('https://img.freepik.com/premium-photo/woman-squeezing-orange-fruit-making-juice-granola-nuts-fruits-berries-milk-yogurt-juice-cheese_80743-1738.jpg?w=996');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-form label {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.recipe-form input,
+.recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.recipe-form input:focus,
+.recipe-form textarea:focus {
+    outline: none;
+}
+
+.recipe-form .add-recipe-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: #ff7f50;
+    cursor: pointer;
+}
+
+.recipe-form .add-recipe-btn:hover {
+    background-color: #ff6347;
+}
