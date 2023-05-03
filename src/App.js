@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Search from './components/Search'
 import MealData from './database/db.json'
-import RecipeForm from './components/AddRecipe'
+import RecipeForm from './components/RecipeForm'
 
 function App() {
 
