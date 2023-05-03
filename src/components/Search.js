@@ -7,7 +7,7 @@ import ViewRecipe from './ViewRecipe';
 function Search({ placeholder }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredData, setFilteredData] = useState([]);
-  const [selectedMealId, setSelectedMealId] = useState(null);
+  const [selectedMeal, setSelectedMeal] = useState(null);
 
   const handleSearch = () => {
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${searchTerm}`)
@@ -17,18 +17,20 @@ function Search({ placeholder }) {
       })
   }
 
-  const handleViewRecipe = (Instructions) => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${Instructions}`)
+  const handleViewRecipe = (idMeal) => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
       .then((res) => res.json())
       .then((data) => {
-        setSelectedMealId(data.meals[0]);
-      });
+        console.log(data);
+        setSelectedMeal(data.meals[0]);
+      })
+      .catch ((error)=> console.error(error));
   };
   
 
-  const handleClick = (id) => {
+  const handleClick = (idMeal) => {
     // Redirect to meal page with the meal id
-    setSelectedMealId(id);
+    handleViewRecipe(idMeal)
   };
 
   const handleKeyDown = (event) => {
@@ -43,8 +45,8 @@ function Search({ placeholder }) {
         <input type="text" placeholder={placeholder} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyDown} />
         <button onClick={handleSearch}><SearchSharp /></button>
       </div>
-      {selectedMealId ? (
-        <ViewRecipe mealId={selectedMealId} setSelectedMealId={setSelectedMealId} handleViewRecipe={handleViewRecipe}/>
+      {selectedMeal ? (
+        <ViewRecipe meal={selectedMeal} handleClose={()=> setSelectedMeal(null)} handleViewRecipe={handleViewRecipe}/>
       ) : (
       <div className='searchResultsContainer'>
         <SearchResults filteredData={filteredData} handleClick={handleClick} searchTerm={searchTerm} />

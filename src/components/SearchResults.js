@@ -37,33 +37,19 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
         ) : (
           results.map((value) => {
             return (
-              <div
-                key={value.idMeal}
-                onClick={() => handleClick(value.idMeal)}
-                className="mealContainer"
-              >
-                <img
-                  src={value.strMealThumb}
-                  alt={value.strMeal}
-                  className="mealThumb"
-                />
+              <div key={value.idMeal} onClick={() => handleClick(value.idMeal)} className="mealContainer">
+                <img src={value.strMealThumb} alt={value.strMeal} className="mealThumb" />
                 <div className="mealName">{value.strMeal}</div>
                 <div>
-                  <button
-                    className="like-btn"
-                    onClick={(event) => handleLike(event, value.strMeal)}
-                  >
+                  <button className="like-btn" onClick={(event) => handleLike(event, value.strMeal)}>
                     <ThumbUp />
                   </button>
-                  <button
-                    className="dislike-btn"
-                    onClick={(event) => handleDislike(event, value.strMeal)}
-                  >
+                  <button className="dislike-btn" onClick={(event) => handleDislike(event, value.strMeal)}>
                     <ThumbDown />
                   </button>
                 </div>
                 <div className="view-recipe-btn">
-                  <button onClick={() => handleViewRecipe(value.strInstructions)}>
+                  <button onClick={() => handleViewRecipe(value.idMeal)}>
                     View Recipe
                   </button>
                 </div>
