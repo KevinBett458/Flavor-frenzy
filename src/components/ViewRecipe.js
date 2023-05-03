@@ -25,4 +25,4 @@ function ViewRecipe({ meal, handleClose }) {
   );
 }
 
-export default ViewRecipe;
+export default ViewRecipe; 
