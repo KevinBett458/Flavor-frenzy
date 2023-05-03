@@ -6,6 +6,7 @@ function RecipeForm({ addRecipe }) {
   const [ingredients, setIngredients] = useState("");
   const [instructions, setInstructions] = useState("");
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     addRecipe({ mealName, ingredients, instructions });
@@ -15,6 +16,7 @@ function RecipeForm({ addRecipe }) {
   };
 
   return (
+    <div className="recipe-form">
     <form onSubmit={handleSubmit}>
       <label htmlFor="mealName">Meal Name:</label>
       <input
@@ -43,6 +45,7 @@ function RecipeForm({ addRecipe }) {
 
       <button type="submit">Add Recipe</button>
     </form>
+    </div>
   );
 }
 
