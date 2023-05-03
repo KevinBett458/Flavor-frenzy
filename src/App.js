@@ -14,6 +14,7 @@ function App() {
   return (
     <div className='App'>
       <Search placeholder='Enter a meal name....' data={MealData}/>
+      <RecipeForm addRecipe={handleAddRecipe} />
     </div>
   )
 }
