@@ -1,5 +1,5 @@
-body {
-  background: purple;
+/* body {
+  background: yellow;
 }
 
 .search {
@@ -18,7 +18,7 @@ body {
 .search input {
   background: white;
   border: 0;
-  border-radius: 2px;
+  border-radius: 30px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   font-size: 18px;
@@ -48,21 +48,17 @@ body {
   font-size: 35px;
 }
 
-.mealContainer {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  cursor: pointer;
-}
-
 .mealThumb {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .mealName {
-  font-size: 1.2rem;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .mealCategory {
@@ -71,12 +67,75 @@ body {
   margin-left: auto;
 }
 
-.searchResultsContainer {
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 20px;
-  width: 30%;
+.dataResult {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
 }
+
+.mealContainer {
+  background-color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: white;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  min-width: 300px;
+}
+
+.mealContainer:hover {
+  transform: translateY(-5px);
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.like-btn {
+  background-color: transparent;
+  color: green;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.dislike-btn {
+  background-color: transparent;
+  color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.view-recipe-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+} */
