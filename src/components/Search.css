@@ -33,6 +33,7 @@
   background-color: white;
   display: grid;
   place-items: center;
+  margin-right: 15px;
 }
 
 .searchIcon:hover {
