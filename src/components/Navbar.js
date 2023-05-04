@@ -1,8 +1,10 @@
-import React from "react";
+import { useContext } from "react";
 import { Link } from 'react-router-dom';
-import logo from './flavor-frenzy-high-resolution-logo-color-on-transparent-background.png'
 
 function Navbar() {
+    const { favourites } = useContext(FavoritesContext);
+
+    console.log(favourites)
     return (
         <nav>
             <div>
@@ -10,7 +12,7 @@ function Navbar() {
             </div>
             <div>
                 <Link to="/">Home</Link>
-                <Link to="/favourites">Favorites</Link>
+                <Link to="/favorites">Favourites ({favourites.length})</Link>
                 <Link to="/about">About</Link>
             </div>
         </nav>
