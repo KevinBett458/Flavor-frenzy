@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 import Search from './Search'
 import RecipeForm from './RecipeForm'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
 import "../App.css"
-import Navbar from './Navbar';
-
 
 function Home() {
     const [recipes, setRecipes] = useState([]);
@@ -35,5 +31,4 @@ function Home() {
     );
 }
 
-
-export default Home
+export default Home;
