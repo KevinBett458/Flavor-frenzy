@@ -53,7 +53,7 @@ function Search({ placeholder }) {
   return (
     <div className="search">
       <div className="searchInputs">
-        <input type="text" placeholder={placeholder} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyDown} />
+        <input type="text" placeholder='Enter a meal name...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyDown} />
         <button onClick={handleSearch}><SearchSharp /></button>
         <favorite favorites={favorites} />
       </div>

@@ -25,7 +25,7 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
 
   const handleLike = (event, strMeal, meal) => {
     event.stopPropagation();
-    toast.success(`Liked ${strMeal}😀 and has been added to favorites`);
+    toast.success(`Liked ${strMeal}😀 and has been added to favorite`);
     addTofavorites(meal);
   };
 
