@@ -1,12 +1,22 @@
-import React from 'react';
+import {useContext} from 'react';
+import { FavoritesContext } from './FavoritesContext';
 
-const Favourites = () => {
-    return (
-        <div>
-            <h1>Favourites</h1>
-            
-        </div>
-    );
+function Favourites() {
+  const { favorites, setFavorites } = useContext(FavoritesContext);
+
+  const addToFavorites = (meal) => {
+    setFavorites([...favorites, meal]);
+  };
+  
+  return (
+    <div className='favorites'>
+      <ul addToFavorites={addToFavorites}>
+        {favorites.map((favorite) => (
+          <li key={favorite.idMeal}>{favorite.strMeal}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default Favourites;
