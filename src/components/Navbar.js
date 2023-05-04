@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Link } from 'react-router-dom';
+import FavoritesContext from "./FavoritesContext";
 
 function Navbar() {
     const { favourites } = useContext(FavoritesContext);
@@ -8,12 +9,10 @@ function Navbar() {
     return (
         <nav>
             <div>
-                <img className="logo" src={logo} alt="Flavor Frenzy" />
-            </div>
-            <div>
                 <Link to="/">Home</Link>
                 <Link to="/favorites">Favourites ({favourites.length})</Link>
                 <Link to="/about">About</Link>
+
             </div>
         </nav>
     );

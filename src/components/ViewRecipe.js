@@ -20,6 +20,7 @@ function ViewRecipe({ meal, handleClose }) {
         </ul>
         <h3>Instructions:</h3>
         <p>{meal.strInstructions}</p>
+        
       </div>
     </div>
   );
