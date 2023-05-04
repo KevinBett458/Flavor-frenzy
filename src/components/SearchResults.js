@@ -1,10 +1,10 @@
-
 import { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { ThumbUp } from "@mui/icons-material";
 import { ThumbDown } from "@mui/icons-material";
 import ViewRecipe from "./ViewRecipe";
 import favorites from "./Favorites";
+import 'react-toastify/dist/ReactToastify.css';
 import FavoritesContext from "./FavoritesContext";
 
 function SearchResults({ filteredData, handleClick, searchTerm }) {
@@ -27,11 +27,6 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
     setFavorites((prevfavorites) => [...prevfavorites, meal])
   };
 
-  const handleLike = (event, strMeal, meal) => {
-    event.stopPropagation();
-    toast.success(`Liked ${strMeal}😀`);
-    addToFavourites(meal);
-  };
 
   const handleDislike = (event, strMeal) => {
     event.stopPropagation();
@@ -76,7 +71,7 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
       )}
       {favourites.length > 0 && <Favourites favourites={favourites} />}
     </div>
-  );
+  );t sw
 }
 
 export default SearchResults;
