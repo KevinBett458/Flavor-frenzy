@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Link } from 'react-router-dom';
+import FavoritesContext from "./FavoritesContext";
 
 function Navbar() {
     const { favourites } = useContext(FavoritesContext);
@@ -18,6 +19,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
