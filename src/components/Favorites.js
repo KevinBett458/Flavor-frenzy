@@ -1,13 +1,13 @@
 import {useContext} from 'react';
 import { FavoritesContext } from './FavoritesContext';
 
-function Favourites() {
+function Favorites() {
   const { favorites, setFavorites } = useContext(FavoritesContext);
 
   const addToFavorites = (meal) => {
     setFavorites([...favorites, meal]);
   };
-  
+   
   return (
     <div className='favorites'>
       <ul addToFavorites={addToFavorites}>
@@ -19,4 +19,4 @@ function Favourites() {
   );
 }
 
-export default Favourites;
+export default Favorites;
