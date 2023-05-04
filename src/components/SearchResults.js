@@ -1,7 +1,7 @@
-
 import { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { ThumbUp } from "@mui/icons-material";
+import 'react-toastify/dist/ReactToastify.css';
 import { ThumbDown } from "@mui/icons-material";
 import ViewRecipe from "./ViewRecipe";
 import favorites from "./Favorites";
@@ -25,7 +25,7 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
 
   const handleLike = (event, strMeal, meal) => {
     event.stopPropagation();
-    toast.success(`Liked ${strMeal}😀`);
+    toast.success(`Liked ${strMeal}😀 and has been added to favorites`);
     addTofavorites(meal);
   };
 
@@ -42,36 +42,20 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
     <div className="dataResult">
       <ToastContainer />
       {selectedMeal ? (
-        <ViewRecipe
-          meal={selectedMeal}
-          handleClose={() => setSelectedMeal(null)}
-          addTofavorites={addTofavorites}
-        />
+        <ViewRecipe meal={selectedMeal} handleClose={() => setSelectedMeal(null)} addTofavorites={addTofavorites} />
       ) : (
         results.map((value) => {
           return (
-            <div
-              key={value.idMeal}
-              onClick={() => handleClick(value.idMeal)}
-              className="mealContainer"
-            >
-              <img
-                src={value.strMealThumb}
+            <div key={value.idMeal} onClick={() => handleClick(value.idMeal)} className="mealContainer"  >
+              <img src={value.strMealThumb}
                 alt={value.strMeal}
-                className="mealThumb"
-              />
+                className="mealThumb" />
               <div className="mealName">{value.strMeal}</div>
               <div>
-                <button
-                  className="like-btn"
-                  onClick={(event) => handleLike(event, value.strMeal, value)}
-                >
+                <button className="like-btn" onClick={(event) => handleLike(event, value.strMeal, value)} >
                   <ThumbUp />
                 </button>
-                <button
-                  className="dislike-btn"
-                  onClick={(event) => handleDislike(event, value.strMeal)}
-                >
+                <button className="dislike-btn" onClick={(event) => handleDislike(event, value.strMeal)} >
                   <ThumbDown />
                 </button>
               </div>
