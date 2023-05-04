@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './ViewRecipe.css';
 
 function ViewRecipe({ meal, handleClose }) {
   return (

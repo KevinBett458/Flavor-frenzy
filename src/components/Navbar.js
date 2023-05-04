@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import FavoritesContext from "./FavoritesContext";
 
 function Navbar() {
-    const { favourites } = useContext(FavoritesContext);
+    const { Favorites } = useContext(FavoritesContext);
 
-    console.log(favourites)
+    console.log(Favorites)
     return (
         <nav>
             <div>
                 <Link to="/">Home</Link>
-                <Link to="/favorites">Favourites ({favourites.length})</Link>
+                <Link to="/favorites">Favorites ({Favorites.length})</Link>
                 <Link to="/about">About</Link>
 
             </div>

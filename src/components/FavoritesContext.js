@@ -1,12 +1,13 @@
+
 import { createContext, useState } from 'react';
 
 export const FavoritesContext = createContext();
 
 export const FavoritesProvider  = ({children}) => {
-    const [favourites, setFavourites]  = useState([]);
+    const [Favorites, setFavorites]  = useState([]);
 
     return (
-        <FavoritesContext.Provider value={{favourites, setFavourites}}>
+        <FavoritesContext.Provider value={{Favorites, setFavorites}}>
             {children}
         </FavoritesContext.Provider>
     )

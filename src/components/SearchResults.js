@@ -1,3 +1,4 @@
+
 import { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { ThumbUp } from "@mui/icons-material";
@@ -19,22 +20,27 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
     };
   const [favorites, setfavorites] = useState([]);
 
-  const {setFavourites}  = useContext(FavoritesContext)
+  const {setFavorites}  = useContext(FavoritesContext)
 
   const addTofavorites = (meal) => {
     setfavorites((prevfavorites) => [...prevfavorites, meal]);
-    setFavourites((prevfavorites) => [...prevfavorites, meal])
+    setFavorites((prevfavorites) => [...prevfavorites, meal])
   };
 
-    const handleDislike = (event, strMeal)=> {
-      //Handles dislike button
-      event.stopPropagation();
-      toast.error(`Disliked ${strMeal}😢`)
-    }
+  const handleLike = (event, strMeal, meal) => {
+    event.stopPropagation();
+    toast.success(`Liked ${strMeal}😀`);
+    addToFavourites(meal);
+  };
 
-    const handleViewRecipe = (idMeal)=> {
-      setSelectedMeal(results.find((meal)=> meal.idMeal === idMeal));
-    }
+  const handleDislike = (event, strMeal) => {
+    event.stopPropagation();
+    toast.error(`Disliked ${strMeal}😢`);
+  };
+
+  const handleViewRecipe = (idMeal) => {
+    setSelectedMeal(results.find((meal) => meal.idMeal === idMeal));
+  };
 
   return (
     <div className="dataResult">
@@ -43,7 +49,7 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
         <ViewRecipe
           meal={selectedMeal}
           handleClose={() => setSelectedMeal(null)}
-          addToFavourites={addToFavourites}
+          addTofavorites={addTofavorites}
         />
       ) : (
         results.map((value) => {
@@ -64,11 +70,13 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
                 </button>
               </div>
               </div>
-            );
-          })
-        )}
-      </div>
-    );
-  }
-  
-  export default SearchResults
+            </div>
+          );
+        })
+      )}
+      {favourites.length > 0 && <Favourites favourites={favourites} />}
+    </div>
+  );
+}
+
+export default SearchResults;
