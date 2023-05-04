@@ -5,11 +5,12 @@ function RecipeForm({ addRecipe }) {
   const [mealName, setMealName] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [instructions, setInstructions] = useState("");
-
+  const [image, setImage] = useState("")
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addRecipe({ mealName, ingredients, instructions });
+    addRecipe({ mealName, ingredients, image, instructions });
+    setImage("")
     setMealName("");
     setIngredients("");
     setInstructions("");
@@ -27,6 +28,15 @@ function RecipeForm({ addRecipe }) {
           onChange={(e) => setMealName(e.target.value)}
         /><br /><br />
 
+        <label htmlFor="image">image:</label>
+        <input
+          type="text"
+          id="image"
+          name="image"
+          value={image}
+          onChange={(e) => setImage(e.target.value)}
+        /><br /><br />
+
         <label htmlFor="ingredients">Ingredients:</label>
         <textarea
           id="ingredients"
@@ -42,6 +52,8 @@ function RecipeForm({ addRecipe }) {
           value={instructions}
           onChange={(e) => setInstructions(e.target.value)}
         /><br /><br />
+
+
 
         <button type="submit">Add Recipe</button>
       </form>
