@@ -30,12 +30,14 @@ function RecipeForm({ addRecipe }) {
 
         <label htmlFor="image">image:</label>
         <input
-          type="text"
+          type="url"
           id="image"
           name="image"
           value={image}
           onChange={(e) => setImage(e.target.value)}
         /><br /><br />
+
+        {image && <img src={image} alt="Recipe" />}
 
         <label htmlFor="ingredients">Ingredients:</label>
         <textarea
