@@ -4,6 +4,8 @@ import RecipeForm from './RecipeForm'
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "../App.css"
 // import Navbar from './Navbar';
+import AddRecipe from './AddRecipe'
+import Footer from './Footer'
 
 
 function Home() {
@@ -17,10 +19,12 @@ function Home() {
 
     return (
         <div className="App">
-
-            <Search placeholder={"Enter meal name"} />
-            <RecipeForm addRecipe={addRecipe} />
-            <Search data={recipes} />
+            
+            <Search placeholder={"Enter meal name"} data={recipes} />
+            
+            <RecipeForm />
+            <AddRecipe />
+            <Footer />
             <ul>
                 {recipes.map((recipe, index) => (
                     <li key={index}>

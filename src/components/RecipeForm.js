@@ -1,20 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './RecipeForm.css';
 
-function RecipeForm({ addRecipe }) {
+function RecipeForm() {
   const [mealName, setMealName] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [instructions, setInstructions] = useState("");
   const [image, setImage] = useState("")
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addRecipe({ mealName, ingredients, image, instructions });
-    setImage("")
-    setMealName("");
-    setIngredients("");
-    setInstructions("");
+  const addRecipe = {
+    name: mealName,
+    image: image,
+    instructions: instructions,
+    ingredients: ingredients
   };
+  
+  useEffect(() => {
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(addRecipe)
+    };
+    fetch('http://localhost:8001/recipes', requestOptions)
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+  }, [addRecipe]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setImage('');
+    setMealName('');
+    setIngredients('');
+    setInstructions('');
+  };
+   
 
   return (
     <div className="recipe-form">
@@ -54,8 +73,6 @@ function RecipeForm({ addRecipe }) {
           value={instructions}
           onChange={(e) => setInstructions(e.target.value)}
         /><br /><br />
-
-
 
         <button type="submit">Add Recipe</button>
       </form>

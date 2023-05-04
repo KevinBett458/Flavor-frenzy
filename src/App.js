@@ -2,10 +2,11 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import favorites from './components/Favorites';
+import Favorites from './components/Favorites';
 import "./App.css"
 import Navbar from './components/Navbar';
 import { FavoritesContext } from './components/FavoritesContext';
+import About from './components/About';
 
 function App() {
   const [favorites, setFavorites] = useState([]);
@@ -21,8 +22,8 @@ function App() {
 
       <Routes>
         <Route exact path='/' element={<Home />} />
-
         <Route path='/favorites' element={<favorites favorites={favorites} />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </>
   );
