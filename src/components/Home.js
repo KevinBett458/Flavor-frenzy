@@ -30,7 +30,7 @@ function Home() {
             <br />
             <br />
           <div className='footer-container'>
-                <Footer />
+                <Footer addRecipe={addRecipe}/>
                      </div>
             <ul>
                 {recipes.map((recipe, index) => (

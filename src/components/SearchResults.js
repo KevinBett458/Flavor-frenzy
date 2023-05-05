@@ -4,7 +4,6 @@ import { ThumbUp } from "@mui/icons-material";
 import 'react-toastify/dist/ReactToastify.css';
 import { ThumbDown } from "@mui/icons-material";
 import ViewRecipe from "./ViewRecipe";
-import favorites from "./Favorites";
 import FavoritesContext from "./FavoritesContext";
 
 function SearchResults({ filteredData, handleClick, searchTerm }) {

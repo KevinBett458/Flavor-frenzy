@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { ThumbUp } from "@mui/icons-material";
 import 'react-toastify/dist/ReactToastify.css';
 import { ThumbDown } from "@mui/icons-material";
