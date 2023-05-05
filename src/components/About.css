@@ -3,12 +3,15 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  background: white;
 }
 
 .about-container h2 {
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .about-container p {

@@ -37,6 +37,7 @@ function RecipeForm() {
    
 
   return (
+    <div>
     <div className="recipe-form">
       <form onSubmit={handleSubmit}>
         <label htmlFor="mealName">Meal Name:</label>
@@ -76,10 +77,10 @@ function RecipeForm() {
         /><br /><br />
         <button type="submit">Add Recipe</button>
       </form>
+      </div>
       <div className="add-recipe">
       <AddRecipe />
       </div>
-
     </div>
   );
 }
