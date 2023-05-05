@@ -20,6 +20,7 @@ function Navbar() {
                         <Link to="/">Home</Link>
                         <Link to="/favorites">Favorites ({Favorites.length})</Link>
                         <Link to="/about">About</Link>
+                        <Link to="/recipeform">Form</Link>
                     </div>
                 </div>
             </div>

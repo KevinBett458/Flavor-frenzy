@@ -5,6 +5,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+    margin-bottom: 30px;
   }
   
   nav a {
@@ -24,13 +25,13 @@ nav {
   
   .logo-title {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
   }
   
   .logo {
     height: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: -50px;
     cursor: pointer;
   }
   
@@ -46,5 +47,6 @@ nav {
     font-style: italic;
     align-items: center;
     justify-content: flex-end;
+    margin-left: 600px;
   }
   

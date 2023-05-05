@@ -1,5 +1,7 @@
 body {
-  background: rgb(244, 244, 227);
+  background: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .search {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './RecipeForm.css';
+import AddRecipe from "./AddRecipe";
 
 function RecipeForm() {
   const [mealName, setMealName] = useState("");
@@ -56,7 +57,7 @@ function RecipeForm() {
           onChange={(e) => setImage(e.target.value)}
         /><br /><br />
 
-        {image && <img src={image} alt="Recipe" />}
+        {image && <img className='form-image' src={image} alt="Recipe" />}
 
         <label htmlFor="ingredients">Ingredients:</label>
         <textarea
@@ -73,9 +74,12 @@ function RecipeForm() {
           value={instructions}
           onChange={(e) => setInstructions(e.target.value)}
         /><br /><br />
-
         <button type="submit">Add Recipe</button>
       </form>
+      <div className="add-recipe">
+      <AddRecipe />
+      </div>
+
     </div>
   );
 }

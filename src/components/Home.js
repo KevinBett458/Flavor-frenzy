@@ -1,30 +1,37 @@
 import React, { useState } from 'react'
 import Search from './Search'
-import RecipeForm from './RecipeForm'
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "../App.css"
 // import Navbar from './Navbar';
-import AddRecipe from './AddRecipe'
 import Footer from './Footer'
 
 
 function Home() {
     const [recipes, setRecipes] = useState([]);
-
     const addRecipe = (recipe) => {
         setRecipes((prevRecipes) => [...prevRecipes,recipe]);
     };
 
-
-
     return (
-        <div className="App">
-            
+        <div>
+            <div>
             <Search placeholder={"Enter meal name"} data={recipes} />
-            
-            <RecipeForm />
-            <AddRecipe />
-            <Footer />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          <div className='footer-container'>
+                <Footer />
+                     </div>
             <ul>
                 {recipes.map((recipe, index) => (
                     <li key={index}>

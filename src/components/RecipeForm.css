@@ -1,13 +1,15 @@
 .recipe-form {
+    position: relative; /* Add this line to make the form a relative container */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px;
     border-radius: 10px;
-    background-image: url('https://img.freepik.com/premium-photo/woman-squeezing-orange-fruit-making-juice-granola-nuts-fruits-berries-milk-yogurt-juice-cheese_80743-1738.jpg?w=996');
-    background-size: cover;
+    background-image: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg');
+    background-size: contain;
     background-position: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
 }
 
 .recipe-form label {
@@ -43,4 +45,13 @@
 
 .recipe-form .add-recipe-btn:hover {
     background-color: #ff6347;
+}
+
+.recipe-form .form-image {
+    position: absolute; /* Add this line to make the image an absolute element */
+    top: 0; /* Set the top position to 0 */
+    left: 0; /* Set the left position to 0 */
+    bottom: 0; /* Set the bottom position to 0 */
+    right: 0; /* Set the right position to 0 */
+    z-index: -1; /* Set the z-index to -1 to position the image behind the form */
 }
