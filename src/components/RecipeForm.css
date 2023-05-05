@@ -1,39 +1,41 @@
 .recipe-form {
-    position: relative; /* Add this line to make the form a relative container */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px;
     border-radius: 10px;
-    background-image: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg');
-    background-size: contain;
+    background-image: url('https://img.freepik.com/free-photo/recipe-tiramisu_23-2147772000.jpg?w=360&t=st=1683267205~exp=1683267805~hmac=c2ecf17910fbf6bdeb7b8721be5dfd63b322df251fc06dc9fe28bb7a9268148a');
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
     background-position: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
-}
-
-.recipe-form label {
+  }
+  
+  .recipe-form label {
     font-size: 20px;
     color: white;
     margin-bottom: 10px;
-}
-
-.recipe-form input,
-.recipe-form textarea {
+  }
+  
+  .recipe-form input,
+  .recipe-form textarea {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 16px;
-}
-
-.recipe-form input:focus,
-.recipe-form textarea:focus {
+  }
+  
+  .recipe-form input:focus,
+  .recipe-form textarea:focus {
     outline: none;
-}
-
-.recipe-form .add-recipe-btn {
+  }
+  
+  .recipe-form .add-recipe-btn {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -41,17 +43,20 @@
     color: white;
     background-color: #ff7f50;
     cursor: pointer;
-}
-
-.recipe-form .add-recipe-btn:hover {
+  }
+  
+  .recipe-form .add-recipe-btn:hover {
     background-color: #ff6347;
-}
-
-.recipe-form .form-image {
-    position: absolute; /* Add this line to make the image an absolute element */
-    top: 0; /* Set the top position to 0 */
-    left: 0; /* Set the left position to 0 */
-    bottom: 0; /* Set the bottom position to 0 */
-    right: 0; /* Set the right position to 0 */
-    z-index: -1; /* Set the z-index to -1 to position the image behind the form */
-}
+  }
+  
+  .form-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .add-recipe {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
