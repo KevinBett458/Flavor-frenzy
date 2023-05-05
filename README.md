@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<div>
+  <h1 style="text-align: center;">Flavor-Frenzy</h1>
+  <p>Welcome to Flavor Frenzy! This app allows you to search for recipes by keyword and save your favorite recipes to a favorites list. It uses the TheMealDB API to fetch recipe data.</p>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div>
+  <h2 style="text-align: center;">Features</h2>
+  <ul>
+    <li>Search for recipes by keyword</li>
+    <li>View recipe details, including ingredients and instructions</li>
+    <li>Add recipes to your favorites list</li>
+    <li>View your favorite recipes</li>
+  </ul>
+</div>
 
-## Available Scripts
+<div>
+  <h2 style="text-align: center;">Technologies Used</h2>
+  <ul>
+    <li>React</li>
+    <li>JavaScript</li>
+    <li>CSS</li>
+    <li>TheMealDB API</li>
+  </ul>
+</div>
 
-In the project directory, you can run:
+<div>
+  <h2 style="text-align: center;">Getting Started</h2>
+  <p>To get started with Recipe App, follow these steps:</p>
+  <ol>
+    <li>Clone this repository <code>git@github.com:KevinBett458/Flavor-frenzy.git</code></li>
+    <li>Install dependencies using <code>npm install</code></li>
+    <li>Start the app using <code>npm start</code></li>
+  </ol>
+</div>
 
-### `npm start`
+<div>
+  <h2 style="text-align: center;">Usage</h2>
+  <p>To use Recipe App, enter a search term in the search bar and click "Search". The app will display a list of recipes that match your search term. Click on a recipe to view its details, including ingredients and instructions. To add a recipe to your favorites list, click the "thumbs up" button on the recipe details page.</p>
+  <p>To view your favorite recipes, click the "Favorites" link in the navigation bar. You can remove a recipe from your favorites list by clicking the "thumbs down" button on the recipe details page.</p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div>
+  <h2 style="text-align: center;">Contributing</h2>
+  <p>Contributions to Recipe App are welcome! To contribute, please follow these steps:</p>
+  <ol>
+    <li>Fork this repository</li>
+    <li>Create a new branch (git checkout -b feature/my-feature)</li>
+    <li>Commit your changes (git commit -m "Add my feature")</li>
+    <li>Push to the branch (git push origin feature/my-feature)</li>
+    <li>Create a new Pull Request</li>
+  </ol>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div>
+  <h2 style="text-align: center;">Authors</h2>
+  <p>Recipe App was created by:</p>
+  <ul>
+    <li>Kevin Bett</li>
+    <li>Yazid Ahmed</li>
+    <li>Patience Wanjiru</li>
+    <li>Mark Chege</li>
+  </ul> 
+  <p>Special thanks to TheMealDB for providing the recipe data.</p>
+</div>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div>
+  <h2 style="text-align: center;">License</h2>
+  <p>Recipe App is licensed under the MIT License.</p>
+</div>
