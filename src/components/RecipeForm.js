@@ -25,7 +25,7 @@ function RecipeForm() {
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.error(error));
-  }, [addRecipe]);
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();

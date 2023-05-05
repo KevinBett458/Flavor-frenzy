@@ -5,7 +5,7 @@ import SearchResults from './SearchResults';
 import { SearchSharp } from '@mui/icons-material';
 // import { Toast } from 'react-toastify/dist/components';
 import ViewRecipe from './ViewRecipe';
-import favorite from './Favorites';
+
 import { toast } from 'react-toastify';
 
 
