@@ -1,9 +1,12 @@
 .about-container {
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background: white;
+  background-image: url('https://wallpapercave.com/wp/wp7029317.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .about-container h2 {
@@ -12,11 +15,15 @@
   text-align: center;
   text-decoration: underline;
   font-style: italic;
+  color: burlywood;
 }
 
 .about-container p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: center;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, burlywood, white);
 }

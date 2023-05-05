@@ -13,10 +13,8 @@ function Home() {
     };
 
     return (
-        <div>
-            <div>
+            <div className='home'>
             <Search placeholder={"Enter meal name"} data={recipes} />
-            </div>
             <br />
             <br />
             <br />

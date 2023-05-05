@@ -1,52 +1,51 @@
 nav {
-    background-color: #f2f2f2;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    margin-bottom: 30px;
-  }
-  
-  nav a {
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  nav a:hover {
-    color: #666;
-  }
-  
-  nav a.active {
-    color: #ff5733;
-  }
-  
-  .logo-title {
-    display: flex;
-    align-items: center;    
-  }
-  
-  .logo {
-    height: 50px;
-    margin-right: 10px;
-    margin-left: -50px;
-    cursor: pointer;
-  }
-  
-  .title {
-    font-size: 36px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    margin: 0;
-  }
-  
-  .links {
-    display: flex;
-    font-style: italic;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: 600px;
-  }
-  
+  background-color: #f2f2f2;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+nav a.active {
+  color: #ff5733;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;    
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+  margin-left: -50px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  font-style: italic;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 600px;
+}
