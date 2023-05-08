@@ -64,6 +64,11 @@
 </div>
 
 <div>
+  <h2 style="text-align: center;">Deployment</h2>
+  <p><code>https://main--aesthetic-belekoy-30d252.netlify.app/</code></p>
+</div>
+
+<div>
   <h2 style="text-align: center;">License</h2>
   <p>Recipe App is licensed under the MIT License.</p>
 </div>
