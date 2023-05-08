@@ -2,24 +2,26 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-image: url('https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2017/02/18/572295-pizza.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp7029400.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-}
-
-.fav-container {
+  }
+  
+  .fav-container {
     background-color: #ddd;
-}
-
-.favorites-header p {
+  }
+  
+  .favorites-header p {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 30px;
     font-size: 1.5rem;
-    font-weight: bold
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, darkred, burlywood);
   }
-
   
   ul {
     list-style: none;
@@ -37,8 +39,8 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px;
-    background-color: #fff; /* solid white background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
   }
   
   li img {
@@ -66,11 +68,18 @@
     cursor: pointer;
   }
   
-  .favorites ul li:hover {
+  .favorites ul li:hover img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+  }
+  
+  .ingredients {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .button-separator {
@@ -80,7 +89,15 @@
   
   .No-fav {
     text-align: center;
-    font-size: 30px;
-    font-style: bold;
-    color: red;
+    text-decoration: underline;
+    text-decoration-color: darkred;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 50px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, black, red);
   }
+  
+  

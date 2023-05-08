@@ -40,11 +40,11 @@ function Favorites() {
 
   return (
     <div className='favorites'>
-      {favorites.length > 0 ? (
-        <ul>
-          <div className='favorites-header'>
+      <div className='favorites-header'>
           <p>Number of favorite meals: {favorites.length}</p>
           </div>
+      {favorites.length > 0 ? (
+        <ul>
           {favorites.map((favorite) => (
             <li key={favorite.idMeal}>
               <img src={favorite.strMealThumb} alt={favorite.strMeal} />
