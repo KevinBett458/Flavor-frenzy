@@ -33,8 +33,8 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
     toast.error(`Disliked ${strMeal}😢`);
   };
 
-  const handleViewRecipe = (idMeal) => {
-    setSelectedMeal(results.find((meal) => meal.idMeal === idMeal));
+  const handleViewRecipe = (meal) => {
+    setSelectedMeal(meal);
   };
 
   return (
@@ -59,7 +59,7 @@ function SearchResults({ filteredData, handleClick, searchTerm }) {
                 </button>
               </div>
               <div className="view-recipe-btn">
-                <button onClick={() => handleViewRecipe(value.idMeal)}>
+                <button onClick={() => handleViewRecipe(value)}>
                   View Recipe
                 </button>
               </div>

@@ -18,7 +18,7 @@ function Navbar() {
                     <h1 className="title">Flavor Frenzy</h1>
                     <div className="links">
                         <Link to="/">Home</Link>
-                        <Link to="/favorites">Favorites ({Favorites.length})</Link>
+                        <Link to="/favorites">Favorites ({Favorites?.length > 0 && <Favorites Favorites={Favorites} />})</Link>
                         <Link to="/about">About</Link>
                         <Link to="/recipeform">Form</Link>
                     </div>
